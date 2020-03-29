@@ -764,7 +764,6 @@ input[type="radio"] + label:before {
   border-radius: 4px;
   content: "";
   display: block;
-  height: 100%;
   left: 0;
   opacity: 0.5;
   position: absolute;
@@ -811,12 +810,13 @@ input[type="radio"] + label:before {
 
 .image.main {
   display: block;
-  margin: 2.5rem 0;
+  margin: 1.5rem 0;
   width: 100%;
 }
 
 .image.main img {
   width: 100%;
+  height: 50px;
 }
 
 @media screen and (max-width: 736px) {
