@@ -1803,3 +1803,28 @@ body.is-preload #footer {
   flex-direction: column;
   align-items: baseline;
 }
+
+fieldset {
+  margin-bottom: 1.2rem;
+  position: relative;
+}
+
+fieldset label {
+  position: absolute;
+  top: 27%;
+  left: 4%;
+  opacity: 0.8;
+}
+
+input[type="text"]:focus + label {
+  opacity: 0;
+}
+
+textarea[type="text"]:focus + label {
+  opacity: 0;
+}
+
+.status {
+  color: red;
+  font-size: 1.2rem;
+}

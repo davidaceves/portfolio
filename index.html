@@ -6,13 +6,15 @@
 -->
 <html>
   <head>
-    <title>Dimension by HTML5 UP</title>
+    <title>David Aceves</title>
     <meta charset="utf-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, user-scalable=no"
     />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script src="./main.js"></script>
     <noscript>
       <link rel="stylesheet" href="assets/css/noscript.css"
     /></noscript>
@@ -142,35 +144,44 @@
           </ul>
         </article>
         <!-- Contact -->
-        <!-- <article id="contact">
+        <article id="contact">
           <h2 class="major">Contact</h2>
           <span class="image main"><img src="images/pic03.jpg" alt="" /></span>
           <form class="contact-form" action="" method="post">
             <fieldset>
-              <input placeholder="Name" type="text" tabindex="1" autofocus />
+              <input class="name" type="text" tabindex="1" autofocus required />
+              <label for="name">Name</label>
             </fieldset>
             <fieldset>
-              <input placeholder="Email" type="text" tabindex="2" />
+              <input class="email" type="text" tabindex="2" required />
+              <label for="name">Email</label>
+            </fieldset>
+            <fieldset>
+              <input class="subject" type="text" tabindex="3" required />
+              <label for="name">Subject</label>
             </fieldset>
             <fieldset>
               <textarea
-                placeholder="Message"
+                class="message"
                 type="text"
-                tabindex="3"
+                tabindex="4"
+                required
               ></textarea>
+              <label for="name">Message</label>
             </fieldset>
             <fieldset>
               <button
                 name="submit"
                 type="submit"
-                id="contact-submit"
+                class="submit"
                 data-submit="...Sending"
               >
                 Submit
               </button>
             </fieldset>
+            <div class="status"></div>
           </form>
-        </article> -->
+        </article>
       </div>
 
       <!-- Footer -->
