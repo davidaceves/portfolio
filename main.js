@@ -1,7 +1,5 @@
 $(document).ready(function () {
   $(".submit").click(function (event) {
-    event.preventDefault();
-
     var name = $(".name").val();
     var email = $(".email").val();
     var subject = $(".subject").val();
@@ -11,20 +9,25 @@ $(document).ready(function () {
     statusElm.empty();
 
     if (!name) {
+      event.preventDefault();
       statusElm.append("<div>Please enter a name</div>");
     }
 
     if (email.length < 5 || !email.includes("@") || !email.includes(".")) {
+      event.preventDefault();
       statusElm.append("<div>Email is not valid</div>");
     }
 
     if (!subject) {
-      statusElm.append("<div>Subject is not valid</div>");
+      event.preventDefault();
+      statusElm.append("<div>Please enter a subject</div>");
     } else if (subject.length < 2) {
+      event.preventDefault();
       statusElm.append("Please enter a longer subject");
     }
 
     if (!message) {
+      event.preventDefault();
       statusElm.append("<div>Please leave a message</div>");
     }
   });
