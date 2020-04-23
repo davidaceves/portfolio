@@ -149,33 +149,48 @@
           <span class="image main"><img src="images/pic03.jpg" alt="" /></span>
           <form class="contact-form" action="" method="post">
             <fieldset>
-              <input class="name" type="text" tabindex="1" autofocus required />
+              <input
+                class="name"
+                id="name"
+                type="text"
+                tabindex="1"
+                autofocus
+                required
+              />
               <label for="name">Name</label>
             </fieldset>
             <fieldset>
-              <input class="email" type="text" tabindex="2" required />
-              <label for="name">Email</label>
+              <input
+                class="email"
+                id="email"
+                type="text"
+                tabindex="2"
+                required
+              />
+              <label for="email">Email</label>
             </fieldset>
             <fieldset>
-              <input class="subject" type="text" tabindex="3" required />
-              <label for="name">Subject</label>
+              <input
+                class="subject"
+                id="subject"
+                type="text"
+                tabindex="3"
+                required
+              />
+              <label for="subject">Subject</label>
             </fieldset>
             <fieldset>
               <textarea
                 class="message"
+                id="message"
                 type="text"
                 tabindex="4"
                 required
               ></textarea>
-              <label for="name">Message</label>
+              <label for="message">Message</label>
             </fieldset>
             <fieldset>
-              <button
-                name="submit"
-                type="submit"
-                class="submit"
-                data-submit="...Sending"
-              >
+              <button type="submit" class="submit" data-submit="...Sending">
                 Submit
               </button>
             </fieldset>

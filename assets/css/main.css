@@ -1816,11 +1816,13 @@ fieldset label {
   opacity: 0.8;
 }
 
+textarea[type="text"]:focus + label,
 input[type="text"]:focus + label {
   opacity: 0;
 }
 
-textarea[type="text"]:focus + label {
+textarea[type="text"]:valid + label,
+input[type="text"]:valid + label {
   opacity: 0;
 }
 
