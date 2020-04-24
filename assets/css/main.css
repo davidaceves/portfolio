@@ -812,18 +812,22 @@ input[type="radio"] + label:before {
   display: block;
   margin: 1.5rem 0;
   width: 100%;
+  height: 100%;
+}
+
+.image.main.project {
+  width: 75%;
 }
 
 .image.main.headshot {
   border: 1px solid grey;
-  margin: 0 auto;
   margin-bottom: 1.2rem;
   width: 35%;
 }
 
 .image.main img {
   width: 100%;
-  height: 50px;
+  height: 100px;
 }
 
 @media screen and (max-width: 736px) {
