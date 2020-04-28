@@ -1803,6 +1803,7 @@ body.is-preload #footer {
 }
 
 .links {
+  font-size: 1.2rem;
   display: flex;
   flex-direction: column;
   align-items: baseline;
